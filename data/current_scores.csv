@@ -1,0 +1,9 @@
+text,class,baptism,temptation,disciples,healings,cana,judas,last_supper,passion,resurrection,total
+Saxo_Amleth,training/exploratory,0,0,0,0,0,1,1,1,3,6
+Shakespeare_Hamlet,training/exploratory,1,0,1,0,0,1,0,1,0,4
+Faustbuch_1592,training/exploratory,0,3,1,0,1,0,3,1,2,11
+Eulenspiegel,holdout_exploratory,3,0,0,2,2,0,0,2,0,9
+Gulliver,holdout_exploratory,0,0,0,0,0,0,0,2,0,2
+Don_Juan,holdout_exploratory,0,0,0,0,0,0,1,1,0,2
+King_Lear,internal_control,0,0,0,0,0,1,0,1,0,2
+Don_Quixote,internal_control,0,0,1,0,0,0,0,0,0,1
