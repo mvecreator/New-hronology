@@ -1,0 +1,7 @@
+source_edge,source_fact,strict_NH_mapping,target_edge_under_strict_map,strict_preserved,role_fusion_needed,forensic_note
+Horwendil-brother-Feng,"Horwendil and Feng are brothers","Horwendil=John; Feng=Herod","John-brother-Herod",false,"Horwendil must switch to Philip","kinship matches Herod/Philip, not Herod/John"
+Horwendil-husband-Gerutha,"Horwendil is Gerutha's first husband","Horwendil=John; Gerutha=Herodias","John-husband-Herodias",false,"Horwendil must switch to Philip","Herodias is wife of Herod's brother in Gospel tradition, not wife of John"
+Feng-kills-Horwendil,"Feng kills Horwendil","Feng=Herod; Horwendil=John","Herod-kills-John",true,"none","victim relation is the strongest exact edge in the strict map"
+Feng-marries-Gerutha,"Feng takes his brother's wife/widow Gerutha","Feng=Herod; Gerutha=Herodias","Herod-marries-Herodias",true,"none","broad second-union-with-brother's-wife pattern preserved; widow/divorce status differs"
+Horwendil-father-Amleth,"Horwendil is Amleth's biological father","Horwendil=John; Amleth=Jesus","John-father-Jesus",false,"no John/Philip substitution fixes this","central kinship contradiction"
+Gerutha-mother-Amleth,"Gerutha is Amleth's mother","Gerutha=Herodias; Amleth=Jesus","Herodias-mother-Jesus",false,"Gerutha must switch to Virgin Mary","motherhood only matches after Gerutha changes prototype"
