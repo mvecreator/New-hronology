@@ -1,76 +1,54 @@
 # 03. Исследовательские gates
 
-## SAXO-PACKAGE-1 — CLOSED
-**Result:** `DISTINCTIVE_MATCH_PASS / UNIQUENESS_FAIL`
+## Completed statistical/structural gates
+- SAXO-PACKAGE-1 — `DISTINCTIVE_MATCH_PASS / UNIQUENESS_FAIL`
+- MDL-1 — `RULE_FAMILY_SATURATION_PASS / ROBUST_COMPRESSION_NOT_DEMONSTRATED`
+- MDL-CONTROL-1 — `GRAMMAR_TRANSFER_PASS / CHRIST_SPECIFICITY_FAIL`
+- DISCRIMINATOR-1 — `STRUCTURAL_SEPARATION_FAIL / RESIDUAL_HC_SIGNAL_NOT_DEMONSTRATED`
+- JOINT-HOLDOUT-1 — `GENERIC_STRUCTURE_FILTER_PASS / NH_POSITIVE_VALIDATION_FAIL / OPEN_CHRISTIAN_CONTROL_PASS`
 
-## MDL-1 — CLOSED
-**Result:** `RULE_FAMILY_SATURATION_PASS / ROBUST_COMPRESSION_NOT_DEMONSTRATED`
+## FORENSIC-IDENTITY-1A — CLOSED
 
-## MDL-CONTROL-1 — CLOSED
-**Result:** `GRAMMAR_TRANSFER_PASS / CHRIST_SPECIFICITY_FAIL`
-
-## DISCRIMINATOR-1 — CLOSED
-**Result:** `STRUCTURAL_SEPARATION_FAIL / RESIDUAL_HC_SIGNAL_NOT_DEMONSTRATED`
-
-## JOINT-HOLDOUT-1 — CLOSED
-
-**Result:** `GENERIC_STRUCTURE_FILTER_PASS / NH_POSITIVE_VALIDATION_FAIL / OPEN_CHRISTIAN_CONTROL_PASS`
-
-Frozen method:
-- `methods/JOINT_HOLDOUT_1_SPEC.md`
-
-Frozen text selection:
-- `methods/JOINT_HOLDOUT_1_SELECTION.md`
+**Result:** `CORE_KINSHIP_OVERLAP_PASS / ONE_TO_ONE_IDENTITY_FAIL / NAME_CORROBORATION_WEAK / LATE_LAYER_DEPENDENCE_HIGH`
 
 Artifacts:
-- `results/JOINT_HOLDOUT_1.md`
-- `data/joint_holdout_1_scores.csv`
-- `scripts/joint_holdout_1.py`
-- `results/JOINT_HOLDOUT_1_VALIDATION.txt`
+- `methods/FORENSIC_IDENTITY_MATRIX_V1.md`
+- `results/FORENSIC_IDENTITY_1A_HAMLET_NAMES_RELATIONS.md`
+- `data/forensic_case_001_identity_map.csv`
+- `data/forensic_case_001_relation_edges.csv`
 
-Joint rule:
-`G>=9 AND K>=3 AND D>=10`
+Key result:
+the Herod/brother's-wife/victim complex is concrete and nontrivial, but the strict NH map preserves only 2 of 6 selected core relation types. Recovering most of the graph requires Horwendil to split into Philip + John and Gerutha to split into Herodias + Mary.
 
-Result:
-- NH positives Job / Prince Igor / Muhammad-Christ layer: `0/3` joint pass.
-- generic controls Moses / Samson: both structurally strong but correctly rejected by Gospel-semantic threshold.
-- Saint Benedict: joint pass, but `A=2` explicit Christian hagiographic generator.
+Most explicit NH onomastic arguments in the Hamlet case concern Shakespeare-added names rather than names inherited from Saxo.
 
-The conjunction is methodologically better than structure alone, but it does not validate HC on the first fresh holdout and is not by itself HC-specific.
+## FORENSIC-IDENTITY-1B — NEXT PRIMARY GATE
 
-## TRUE-HOLDOUT-1 — NEXT PRIMARY GATE
+Audit the concrete object/count chain:
 
-Run the exact frozen joint classifier on a larger preregistered unseen corpus.
+- death letter;
+- two companions/guards;
+- writing/rewrite/substitution;
+- companions die instead;
+- gold / thirty silver;
+- ship/sea voyage;
+- marriage order;
+- return.
 
-Requirements:
-- freeze all members before scoring;
-- include NH-positive Christ-reflection claims;
-- include internal NH negatives;
-- include secular/mythic controls;
-- include explicit Christian/hagiographic controls;
-- do not change `G>=9`, `K>=3`, `D>=10`;
-- report alternative-generator flag A separately;
-- target enough texts for group-level uncertainty to become more meaningful.
+For every element record:
+- earliest source witness;
+- exact NH target;
+- same-person preservation;
+- numerical/object match;
+- source jump;
+- alternative folklore/literary analogue;
+- contradiction or residual.
 
-The purpose is now confirmatory:
-`Does the frozen joint classifier produce more A=0 joint passes in NH-positive material than in controls?`
+Goal:
+determine whether this unusually specific cluster supplies a stable one-to-one Christ/Andronicus identification or again depends on composite source switching.
 
-## CHRISTIAN-CONTROL-1
-
-Expand openly Christian controls:
-- at least 20 saints' lives;
-- 5–10 moralities;
-- 5 explicit imitatio Christi texts.
-
-## MANUSCRIPT-SURVIVAL-1
-
-For each medieval text store:
-`date_range`, `surviving_manuscripts`, `known_lost_witnesses`, `earliest_print`, `transmission_notes`, `uncertainty_grade`.
-
-## RULE-SATURATION-1
-
-Continue tracking `DeltaF_n`, but saturation alone is no longer evidence of HC without differential specificity.
-
-## DATE-GATE — QUEUED
-
-Independently test dating of strong ancient controls and relevant NH sources. Structural similarity and chronological priority remain separate variables.
+## Queued
+- TRUE-HOLDOUT-1
+- CHRISTIAN-CONTROL-1
+- MANUSCRIPT-SURVIVAL-1
+- DATE-GATE
