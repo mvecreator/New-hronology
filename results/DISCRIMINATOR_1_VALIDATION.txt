@@ -1,0 +1,12 @@
+Apollo: class=NH_positive D=4/14 structural=weak A=0
+Esau_Jacob: class=NH_positive D=8/14 structural=ambiguous A=1
+Isaiah: class=NH_positive D=7/14 structural=ambiguous A=2
+Orpheus: class=control D=8/14 structural=ambiguous A=1
+Joseph: class=internal_NH_negative D=13/14 structural=strong A=1
+Jeremiah: class=control D=13/14 structural=strong A=1
+
+NH_positive n=3 mean=6.333333 strong=0
+controls n=3 mean=11.333333 strong=2
+controls_minus_positive_mean=5.000000
+exact_one_sided_permutation_p=0.100000 permutations=20
+NOTE: descriptive only; n=3+3 and holdout set is purposive, not a random population sample.
