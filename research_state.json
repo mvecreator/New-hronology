@@ -1,0 +1,25 @@
+{
+  "project": "NH Anti-Gospel comparative test",
+  "version": "0.1",
+  "frozen_on": "2026-09-20",
+  "status": "exploratory foundation",
+  "hypotheses": {
+    "H0": "universal/random narrative overlap",
+    "HB": "folklore motifs + Christian cultural matrix / imitatio Christi / desacralization",
+    "HC": "single Christ/Gospel prototype transformed into anti-Gospels"
+  },
+  "frozen_anchor_scale": "data/anchors.csv",
+  "primary_candidate_package": "data/saxo_return_package.json",
+  "critical_constraints": [
+    "do not add rules after viewing holdout without version bump and ad-hoc penalty",
+    "importance must be assessed inside source text before Gospel mapping",
+    "predictions and fulfilment are separate high-value structure",
+    "preserve roles and event order",
+    "distinguish rarity of source story from rarity of shared structure",
+    "include manuscript survival uncertainty",
+    "include openly Christian controls",
+    "NH materials index claims; primary texts test them"
+  ],
+  "repository": "https://github.com/mvecreator/New-hronology",
+  "update_policy": "commit only significant research results; do not commit routine intermediate findings"
+}

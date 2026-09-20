@@ -1,0 +1,21 @@
+$ /opt/pyvenv/bin/python3 /mnt/data/NH_AntiGospel_Research_Foundation_v0.1/scripts/score_model.py /mnt/data/NH_AntiGospel_Research_Foundation_v0.1/data/example_packages.json
+RETURN=0
+SAXO_RETURN_1: score=-0.7376 base=0.2624 cost=1.0000
+TOTAL=-0.7376
+
+
+$ /opt/pyvenv/bin/python3 /mnt/data/NH_AntiGospel_Research_Foundation_v0.1/scripts/permutation_test.py /mnt/data/NH_AntiGospel_Research_Foundation_v0.1/data/out_of_sample_scores.csv --group-a NH_positive --group-b secular_control
+RETURN=0
+nA=6 nB=9 observed_mean_diff=1.277778
+exact_one_sided_p=0.203197 permutations=5005
+
+
+$ /opt/pyvenv/bin/python3 /mnt/data/NH_AntiGospel_Research_Foundation_v0.1/scripts/mdl_cost.py --role 1 --metaphor 2 --newrule 1
+RETURN=0
+role: 1.000
+event: 0.000
+order: 0.000
+metaphor: 2.000
+source: 0.000
+newrule: 1.500
+MDL_TRANSFORMATION_COST=4.500

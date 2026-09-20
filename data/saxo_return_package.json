@@ -1,0 +1,48 @@
+{
+  "package_id": "SAXO_RETURN_1",
+  "status": "primary_current_candidate",
+  "saxo_structure": [
+    "protagonist prearranges memorial/funeral-like observance",
+    "protagonist predicts/promises return",
+    "fixed delay is specified",
+    "protagonist is absent",
+    "community receives/believes report of death",
+    "memorial feast/ritual occurs",
+    "same protagonist appears alive",
+    "return triggers climactic revenge and political resolution"
+  ],
+  "gospel_structure": [
+    "protagonist predicts death",
+    "protagonist predicts return/resurrection",
+    "time interval is specified",
+    "death occurs",
+    "burial occurs",
+    "same protagonist appears alive",
+    "prior prediction is retrospectively fulfilled/remembered"
+  ],
+  "shared_features": [
+    "same central protagonist",
+    "advance prediction/planning",
+    "specified interval",
+    "death-state or believed-death state",
+    "death ritual",
+    "appearance alive",
+    "preserved relative order",
+    "high narrative centrality"
+  ],
+  "major_differences": [
+    "real death in Gospel vs feigned/believed death in Saxo",
+    "three-day structure vs one-year structure",
+    "religious culmination vs revenge/political takeover"
+  ],
+  "known_background_motifs": [
+    "K978 Uriah letter",
+    "K511 Uriah letter changed",
+    "K1355 / ATU 930 death-letter / princess complex",
+    "ritual symbolic death / mourning / return traditions"
+  ],
+  "manuscript_uncertainty": {
+    "note": "Full medieval Gesta Danorum manuscript does not survive; full text is known via the 1514 print plus fragments and medieval derivative witnesses.",
+    "effect": "Do not equate absence in surviving corpus with historical absence."
+  }
+}
