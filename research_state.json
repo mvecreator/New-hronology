@@ -1,8 +1,8 @@
 {
   "project": "NH Anti-Gospel comparative test",
-  "version": "0.3",
+  "version": "0.4",
   "frozen_on": "2026-09-21",
-  "status": "MDL-1 closed: RULE_FAMILY_SATURATION_PASS / ROBUST_COMPRESSION_NOT_DEMONSTRATED",
+  "status": "MDL-CONTROL-1 closed: GRAMMAR_TRANSFER_PASS / CHRIST_SPECIFICITY_FAIL",
   "hypotheses": {
     "H0": "universal/random narrative overlap",
     "HB": "folklore motifs + Christian cultural matrix / imitatio Christi / desacralization",
@@ -10,8 +10,8 @@
   },
   "current_assessment": {
     "H0": "insufficient as a complete explanation",
-    "HB": "strong; broad reusable literary/inversion rules remain compatible with the data",
-    "HC": "not excluded; reusable rule-family saturation exists, but robust MDL superiority has not been demonstrated"
+    "HB": "strongly strengthened; frozen NH grammar transfers to internal negatives and open Christian imitation produces denser direct Gospel structure",
+    "HC": "not excluded, but current grammar fails Christ-specificity and cannot serve as a diagnostic identifier"
   },
   "completed_gates": [
     {
@@ -27,11 +27,19 @@
       "data": "data/mdl1_claims.csv",
       "script": "scripts/mdl_selector_entropy.py",
       "validation": "results/MDL_1_VALIDATION.txt"
+    },
+    {
+      "id": "MDL-CONTROL-1",
+      "result": "GRAMMAR_TRANSFER_PASS / CHRIST_SPECIFICITY_FAIL",
+      "artifact": "results/MDL_CONTROL_1.md",
+      "data": "data/mdl_control_1_claims.csv",
+      "script": "scripts/mdl_control_1.py",
+      "validation": "results/MDL_CONTROL_1_VALIDATION.txt"
     }
   ],
   "frozen_anchor_scale": "data/anchors.csv",
   "primary_candidate_package": "data/saxo_return_package.json",
-  "next_primary_gate": "MDL-CONTROL-1",
+  "next_primary_gate": "DISCRIMINATOR-1",
   "queued_gates": [
     "CHRISTIAN-CONTROL-1",
     "MANUSCRIPT-SURVIVAL-1",
@@ -50,6 +58,7 @@
     "broad transformation-family reuse must pay selector/fanout cost",
     "source/version switching must pay nonzero selector cost",
     "free reordering must be tested explicitly rather than treated as zero-cost",
+    "a useful HC discriminator must outperform internal NH negatives, not merely compress NH-positive texts",
     "include manuscript survival uncertainty",
     "include openly Christian controls",
     "chronological priority of ancient controls must be tested separately from structural similarity",
