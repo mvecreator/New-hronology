@@ -9,44 +9,52 @@
 ## MDL-CONTROL-1 — CLOSED
 **Result:** `GRAMMAR_TRANSFER_PASS / CHRIST_SPECIFICITY_FAIL`
 
-Key finding:
-the frozen NH transformation dictionary compresses the internal NH-negative controls `King Lear + Don Quixote` more strongly than the later NH-positive holdout `Eulenspiegel + Don Juan` under every matched order-cost regime tested.
+## DISCRIMINATOR-1 — CLOSED
+
+**Result:** `STRUCTURAL_SEPARATION_FAIL / RESIDUAL_HC_SIGNAL_NOT_DEMONSTRATED`
+
+Frozen before scoring:
+- `methods/DISCRIMINATOR_1_SPEC.md`
 
 Artifacts:
-- `results/MDL_CONTROL_1.md`
-- `data/mdl_control_1_claims.csv`
-- `scripts/mdl_control_1.py`
-- `results/MDL_CONTROL_1_VALIDATION.txt`
+- `results/DISCRIMINATOR_1.md`
+- `data/discriminator_1_scores.csv`
+- `scripts/discriminator_1.py`
+- `results/DISCRIMINATOR_1_VALIDATION.txt`
 
-This does not imply `HC=false`. It shows that the current grammar is not Christ-specific.
+Key result:
+- NH positives: Apollo 4/14, Esau/Jacob 8/14, Isaiah 7/14; mean 6.33; 0/3 strong.
+- controls: Orpheus 8/14, Joseph 13/14, Jeremiah 13/14; mean 11.33; 2/3 strong.
+- exact one-sided permutation p=0.10 is descriptive only (n=3+3 purposive holdout).
 
-## DISCRIMINATOR-1 — NEXT PRIMARY GATE
+Important methodological result:
+DISCRIMINATOR-1 successfully removes much of the old free metaphor/source-hopping behavior, but structural discipline alone is not Gospel-specific. Prophetic narratives such as Jeremiah can score highly without being Gospel biographies.
 
-Freeze a small set of features that HC predicts should distinguish Christ-reflection texts from:
-- internal NH negatives;
-- secular literary controls;
-- explicit Christian imitation.
+The frozen six-text holdout must not be reused for tuning.
 
-Candidate dimensions:
-- same-protagonist preservation;
-- multi-event order preservation;
-- prediction → fulfilment linkage;
-- narrative centrality;
-- low source hopping;
-- low selector entropy;
-- low role swapping;
-- out-of-sample prediction.
+## JOINT-HOLDOUT-1 — NEXT PRIMARY GATE
 
-The feature set and weights must be frozen **before** the next positive/negative holdout is examined.
+Preregister on a **completely new holdout** a conjunction of two already-developed components:
+
+1. semantic Gospel coverage from the pre-existing nine-complex anchor scale;
+2. structural discipline from DISCRIMINATOR-1.
+
+The core hypothesis is:
+
+`HC candidate = high Gospel-semantic coverage AND high structural discipline`
+
+A generic prophetic story may score high structurally but low on Gospel-specific anchors.
+A loose analogy may score on anchors but low structurally.
+An explicit imitatio Christi control may score high on both but must carry an alternative-generator flag and therefore tests whether the conjunction itself is still non-specific.
+
+No threshold or weighting may be chosen after viewing the new holdout.
 
 ## CHRISTIAN-CONTROL-1
 
-Expand the openly Christian control set to at least:
-- 20 saints' lives;
+Expand openly Christian controls:
+- at least 20 saints' lives;
 - 5–10 moralities;
 - 5 explicit imitatio Christi texts.
-
-The current small control already shows a 75% direct Gospel-match rate for Martin + Francis.
 
 ## MANUSCRIPT-SURVIVAL-1
 
@@ -55,15 +63,12 @@ For each medieval text store:
 
 ## TRUE-HOLDOUT-1
 
-After a final discriminator freeze, preregister expected patterns and run blind scoring on unseen material.
+After the joint semantic+structural classifier is frozen, run a larger blind/preregistered unseen set.
 
 ## RULE-SATURATION-1
 
-Continue tracking:
-`DeltaF_n = number of genuinely new transformation rules`.
-
-Rule-family saturation is no longer sufficient by itself; it must be paired with differential specificity.
+Continue tracking `DeltaF_n`, but saturation alone is no longer evidence of HC without differential specificity.
 
 ## DATE-GATE — QUEUED
 
-Independently test dating of strong ancient controls (especially Inanna, Alcestis, Savitri). Structural similarity and chronological priority remain separate variables.
+Independently test dating of strong ancient controls and relevant NH sources. Structural similarity and chronological priority remain separate variables.
