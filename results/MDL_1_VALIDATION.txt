@@ -1,0 +1,28 @@
+claims=54 transformed=40 direct=14
+base_structural_operations=70
+families_total=17 frozen_R=6 new_N=11
+selector_lower_bound_bits=113.094738
+operation_unit_bits=log2(6)=2.584963
+independent_baseline_bits=336.045125
+
+no_order_penalty
+  order_bits=0.000000
+  full_dictionary_bits=359.958656 delta_vs_baseline=+23.913531 pct=+7.116%
+  F0_sunk_bits=336.693994 delta_vs_baseline=+0.648869 pct=+0.193%
+
+seven_ordered_items
+  order_bits=12.299208
+  full_dictionary_bits=372.257864 delta_vs_baseline=+36.212739 pct=+10.776%
+  F0_sunk_bits=348.993202 delta_vs_baseline=+12.948077 pct=+3.853%
+
+ten_ordered_items
+  order_bits=21.791061
+  full_dictionary_bits=381.749717 delta_vs_baseline=+45.704592 pct=+13.601%
+  F0_sunk_bits=358.485055 delta_vs_baseline=+22.439930 pct=+6.678%
+
+prequential_Hamlet_Faust_to_Eulenspiegel_DonJuan
+  holdout_claims=16 transformed=14 new_families=2
+  baseline_bits=113.738350
+  no_order_penalty: grammar_bits=103.963913 delta=-9.774438 pct=-8.594%
+  seven_ordered_items: grammar_bits=116.263121 delta=+2.524771 pct=+2.220%
+  ten_ordered_items: grammar_bits=125.754974 delta=+12.016624 pct=+10.565%
