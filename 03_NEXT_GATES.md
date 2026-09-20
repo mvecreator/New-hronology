@@ -10,44 +10,50 @@
 **Result:** `GRAMMAR_TRANSFER_PASS / CHRIST_SPECIFICITY_FAIL`
 
 ## DISCRIMINATOR-1 — CLOSED
-
 **Result:** `STRUCTURAL_SEPARATION_FAIL / RESIDUAL_HC_SIGNAL_NOT_DEMONSTRATED`
 
-Frozen before scoring:
-- `methods/DISCRIMINATOR_1_SPEC.md`
+## JOINT-HOLDOUT-1 — CLOSED
+
+**Result:** `GENERIC_STRUCTURE_FILTER_PASS / NH_POSITIVE_VALIDATION_FAIL / OPEN_CHRISTIAN_CONTROL_PASS`
+
+Frozen method:
+- `methods/JOINT_HOLDOUT_1_SPEC.md`
+
+Frozen text selection:
+- `methods/JOINT_HOLDOUT_1_SELECTION.md`
 
 Artifacts:
-- `results/DISCRIMINATOR_1.md`
-- `data/discriminator_1_scores.csv`
-- `scripts/discriminator_1.py`
-- `results/DISCRIMINATOR_1_VALIDATION.txt`
+- `results/JOINT_HOLDOUT_1.md`
+- `data/joint_holdout_1_scores.csv`
+- `scripts/joint_holdout_1.py`
+- `results/JOINT_HOLDOUT_1_VALIDATION.txt`
 
-Key result:
-- NH positives: Apollo 4/14, Esau/Jacob 8/14, Isaiah 7/14; mean 6.33; 0/3 strong.
-- controls: Orpheus 8/14, Joseph 13/14, Jeremiah 13/14; mean 11.33; 2/3 strong.
-- exact one-sided permutation p=0.10 is descriptive only (n=3+3 purposive holdout).
+Joint rule:
+`G>=9 AND K>=3 AND D>=10`
 
-Important methodological result:
-DISCRIMINATOR-1 successfully removes much of the old free metaphor/source-hopping behavior, but structural discipline alone is not Gospel-specific. Prophetic narratives such as Jeremiah can score highly without being Gospel biographies.
+Result:
+- NH positives Job / Prince Igor / Muhammad-Christ layer: `0/3` joint pass.
+- generic controls Moses / Samson: both structurally strong but correctly rejected by Gospel-semantic threshold.
+- Saint Benedict: joint pass, but `A=2` explicit Christian hagiographic generator.
 
-The frozen six-text holdout must not be reused for tuning.
+The conjunction is methodologically better than structure alone, but it does not validate HC on the first fresh holdout and is not by itself HC-specific.
 
-## JOINT-HOLDOUT-1 — NEXT PRIMARY GATE
+## TRUE-HOLDOUT-1 — NEXT PRIMARY GATE
 
-Preregister on a **completely new holdout** a conjunction of two already-developed components:
+Run the exact frozen joint classifier on a larger preregistered unseen corpus.
 
-1. semantic Gospel coverage from the pre-existing nine-complex anchor scale;
-2. structural discipline from DISCRIMINATOR-1.
+Requirements:
+- freeze all members before scoring;
+- include NH-positive Christ-reflection claims;
+- include internal NH negatives;
+- include secular/mythic controls;
+- include explicit Christian/hagiographic controls;
+- do not change `G>=9`, `K>=3`, `D>=10`;
+- report alternative-generator flag A separately;
+- target enough texts for group-level uncertainty to become more meaningful.
 
-The core hypothesis is:
-
-`HC candidate = high Gospel-semantic coverage AND high structural discipline`
-
-A generic prophetic story may score high structurally but low on Gospel-specific anchors.
-A loose analogy may score on anchors but low structurally.
-An explicit imitatio Christi control may score high on both but must carry an alternative-generator flag and therefore tests whether the conjunction itself is still non-specific.
-
-No threshold or weighting may be chosen after viewing the new holdout.
+The purpose is now confirmatory:
+`Does the frozen joint classifier produce more A=0 joint passes in NH-positive material than in controls?`
 
 ## CHRISTIAN-CONTROL-1
 
@@ -60,10 +66,6 @@ Expand openly Christian controls:
 
 For each medieval text store:
 `date_range`, `surviving_manuscripts`, `known_lost_witnesses`, `earliest_print`, `transmission_notes`, `uncertainty_grade`.
-
-## TRUE-HOLDOUT-1
-
-After the joint semantic+structural classifier is frozen, run a larger blind/preregistered unseen set.
 
 ## RULE-SATURATION-1
 

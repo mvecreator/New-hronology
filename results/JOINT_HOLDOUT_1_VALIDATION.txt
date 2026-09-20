@@ -1,0 +1,12 @@
+Job: class=NH_positive G=7/27 K=2 D=12/14 semantic=False structural=True joint=False A=1
+Prince_Igor: class=NH_positive G=7/27 K=2 D=5/14 semantic=False structural=False joint=False A=1
+Muhammad_Christ_layer: class=NH_positive G=8/27 K=2 D=3/14 semantic=False structural=False joint=False A=1
+Moses: class=control G=8/27 K=1 D=13/14 semantic=False structural=True joint=False A=1
+Samson: class=control G=7/27 K=2 D=12/14 semantic=False structural=True joint=False A=1
+Saint_Benedict: class=christian_control G=16/27 K=5 D=13/14 semantic=True structural=True joint=True A=2
+
+NH_positive: n=3 mean_G=7.333333 mean_D=6.666667 joint=0
+controls: n=3 mean_G=10.333333 mean_D=12.666667 joint=1
+G controls_minus_positive_mean=3.000000 exact_one_sided_p=0.350000 permutations=20
+D controls_minus_positive_mean=6.000000 exact_one_sided_p=0.100000 permutations=20
+NOTE: descriptive only; purposive n=3+3 holdout.
