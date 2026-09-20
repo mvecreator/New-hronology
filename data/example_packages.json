@@ -1,0 +1,17 @@
+[
+  {
+    "id": "SAXO_RETURN_1",
+    "importance": 0.95,
+    "specificity": 0.8,
+    "prediction": 0.9,
+    "causality": 0.95,
+    "role": 1.0,
+    "order": 0.95,
+    "independence": 0.5,
+    "match": 0.85,
+    "transformations": {
+      "event_substitution": 1,
+      "new_ad_hoc_rule": 0
+    }
+  }
+]
