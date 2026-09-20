@@ -1,0 +1,12 @@
+case,K1_advance,K2_time,K3_death_state,K4_funeral_mourning,K5_same_returns,K6_protocol_fulfilment,K7_centrality,death_type,agency,time_status,notes
+Saxo_Amleth,self_plan,explicit_one_year,yes,yes,yes,yes,high,apparent_social,self,explicit_forecast,"returns during own obsequies"
+Gospel,self_prediction,explicit_third_day,actual,burial,yes,prediction_fulfilled,maximum,actual,self_prediction,explicit_forecast,"post-resurrection meeting also predicted in Mark 14:28"
+Inanna,self_rescue_instructions,three_days_elapsed_not_forecast,actual,ritual_lament,yes,yes,high,actual,self_plus_helper,elapsed_only,"revival time later unspecified"
+Nisgaa_Olala,institutional_script,explicit_one_year,symbolic,formal_funeral_banquet,yes,yes,high,symbolic,institutional,ritual_fixed,"not protagonist-authored"
+Romeo_Juliet,third_party_plan,explicit_42_hours,apparent,burial,yes,partial,maximum,apparent,third_party,explicit_forecast,"awakening works; extraction plan fails"
+Savitri_Satyavan,external_prophecy,explicit_one_year_to_death,actual,no,yes,partial,maximum,actual,external_prophecy,explicit_death_forecast,"no funeral"
+Alcestis,foreknown_death,no_return_interval,actual,funeral_burial,yes,no,high,actual,third_party_rescue,none,"third day refers to purification after return"
+Much_Ado_Hero,third_party_plan,no_fixed_interval,apparent,burial_rites,yes,yes,high,apparent,third_party,none,"plan begins after collapse"
+Tom_Sawyer,plan_formed_after_disappearance,no_fixed_interval,presumed,formal_funeral,yes,yes,high,presumed,self_late,none,"returns during own funeral"
+ATU_990,none,no_fixed_interval,apparent,burial,yes,no,medium,apparent,accidental,none,"catalogued folktale type"
+Anthia_Ephesiaca,oracle_broad_plus_unintended_sleep,no_fixed_interval,apparent,funeral_burial,yes,partial,high,apparent,mixed,none,"sleeping potion substituted for poison"

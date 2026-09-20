@@ -1,23 +1,47 @@
 {
   "project": "NH Anti-Gospel comparative test",
-  "version": "0.1",
+  "version": "0.2",
   "frozen_on": "2026-09-20",
-  "status": "exploratory foundation",
+  "status": "SAXO-PACKAGE-1 closed: DISTINCTIVE_MATCH_PASS / UNIQUENESS_FAIL",
   "hypotheses": {
     "H0": "universal/random narrative overlap",
     "HB": "folklore motifs + Christian cultural matrix / imitatio Christi / desacralization",
     "HC": "single Christ/Gospel prototype transformed into anti-Gospels"
   },
+  "current_assessment": {
+    "H0": "insufficient as a complete explanation",
+    "HB": "materially strengthened by SAXO-PACKAGE-1 controls",
+    "HC": "not excluded; SAXO_RETURN_1 no longer treated as a near-unique fingerprint"
+  },
+  "completed_gates": [
+    {
+      "id": "SAXO-PACKAGE-1",
+      "result": "DISTINCTIVE_MATCH_PASS / UNIQUENESS_FAIL",
+      "artifact": "results/SAXO_PACKAGE_1.md",
+      "controls": "data/saxo_package_1_controls.csv"
+    }
+  ],
   "frozen_anchor_scale": "data/anchors.csv",
   "primary_candidate_package": "data/saxo_return_package.json",
+  "next_primary_gate": "MDL-1",
+  "queued_gates": [
+    "CHRISTIAN-CONTROL-1",
+    "MANUSCRIPT-SURVIVAL-1",
+    "TRUE-HOLDOUT-1",
+    "RULE-SATURATION-1",
+    "DATE-GATE"
+  ],
   "critical_constraints": [
     "do not add rules after viewing holdout without version bump and ad-hoc penalty",
     "importance must be assessed inside source text before Gospel mapping",
     "predictions and fulfilment are separate high-value structure",
     "preserve roles and event order",
     "distinguish rarity of source story from rarity of shared structure",
+    "features absent from the proposed prototype do not support prototype identity merely because they are rare in the source text",
+    "distinguish forecast intervals from intervals merely reported by the narrator",
     "include manuscript survival uncertainty",
     "include openly Christian controls",
+    "chronological priority of ancient controls must be tested separately from structural similarity",
     "NH materials index claims; primary texts test them"
   ],
   "repository": "https://github.com/mvecreator/New-hronology",
