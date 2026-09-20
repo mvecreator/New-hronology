@@ -1,45 +1,52 @@
 # 03. Исследовательские gates
 
 ## SAXO-PACKAGE-1 — CLOSED
-
 **Result:** `DISTINCTIVE_MATCH_PASS / UNIQUENESS_FAIL`
 
-Artifacts:
-- `results/SAXO_PACKAGE_1.md`
-- `data/saxo_package_1_controls.csv`
-
 ## MDL-1 — CLOSED
-
 **Result:** `RULE_FAMILY_SATURATION_PASS / ROBUST_COMPRESSION_NOT_DEMONSTRATED`
 
-The fixed 54-claim sample shows real rule-family saturation (`8→1→1→1`), but selector/source/order freedom removes robust compression.
+## MDL-CONTROL-1 — CLOSED
+**Result:** `GRAMMAR_TRANSFER_PASS / CHRIST_SPECIFICITY_FAIL`
+
+Key finding:
+the frozen NH transformation dictionary compresses the internal NH-negative controls `King Lear + Don Quixote` more strongly than the later NH-positive holdout `Eulenspiegel + Don Juan` under every matched order-cost regime tested.
 
 Artifacts:
-- `results/MDL_1.md`
-- `data/mdl1_claims.csv`
-- `scripts/mdl_selector_entropy.py`
-- `results/MDL_1_VALIDATION.txt`
+- `results/MDL_CONTROL_1.md`
+- `data/mdl_control_1_claims.csv`
+- `scripts/mdl_control_1.py`
+- `results/MDL_CONTROL_1_VALIDATION.txt`
 
-Important nuance: this is not `HC=false`. It means low-description-length superiority has not yet been demonstrated.
+This does not imply `HC=false`. It shows that the current grammar is not Christ-specific.
 
-## MDL-CONTROL-1 — NEXT PRIMARY GATE
+## DISCRIMINATOR-1 — NEXT PRIMARY GATE
 
-Apply the same frozen family dictionary, selector accounting and order treatment to matched negative/control corpora.
+Freeze a small set of features that HC predicts should distinguish Christ-reflection texts from:
+- internal NH negatives;
+- secular literary controls;
+- explicit Christian imitation.
 
-Primary question:
+Candidate dimensions:
+- same-protagonist preservation;
+- multi-event order preservation;
+- prediction → fulfilment linkage;
+- narrative centrality;
+- low source hopping;
+- low selector entropy;
+- low role swapping;
+- out-of-sample prediction.
 
-`Does the NH positive corpus compress materially better than non-HC literary corpora under the same code?`
-
-This gate is necessary because a broad analogy grammar can show family saturation even when no common historical prototype exists.
-
-Required controls should include:
-- internal NH negatives (texts NH assigns to another prototype);
-- secular narrative controls;
-- openly Christian / imitatio Christi controls.
+The feature set and weights must be frozen **before** the next positive/negative holdout is examined.
 
 ## CHRISTIAN-CONTROL-1
 
-Expand to at least 20 saints' lives, 5–10 moralities and 5 explicit imitatio Christi texts.
+Expand the openly Christian control set to at least:
+- 20 saints' lives;
+- 5–10 moralities;
+- 5 explicit imitatio Christi texts.
+
+The current small control already shows a 75% direct Gospel-match rate for Martin + Francis.
 
 ## MANUSCRIPT-SURVIVAL-1
 
@@ -48,14 +55,14 @@ For each medieval text store:
 
 ## TRUE-HOLDOUT-1
 
-After a final freeze, preregister expected patterns and run blind scoring on unseen material.
+After a final discriminator freeze, preregister expected patterns and run blind scoring on unseen material.
 
 ## RULE-SATURATION-1
 
 Continue tracking:
 `DeltaF_n = number of genuinely new transformation rules`.
 
-Family saturation alone is no longer sufficient; it must be accompanied by low selector entropy and differential control performance.
+Rule-family saturation is no longer sufficient by itself; it must be paired with differential specificity.
 
 ## DATE-GATE — QUEUED
 

@@ -1,0 +1,49 @@
+group,corpus,claim,role_swap,event_sub,order_break,metaphor,source_jump,family,selector_bits,source
+internal_negative,King Lear,Lear degraded into a mad wandering king,0,1,0,0,0,R1,2.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,Kent Fool and Edgar treated as follower group,1,0,0,0,0,R2,2.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,Goneril and Regan as close-circle betrayers,1,0,0,0,0,DIRECT,0.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,Edmund betrays his father Gloucester,1,0,0,0,0,DIRECT,0.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,Lear mock trial mapped to trial of Christ,1,1,0,0,0,N11,3.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,Lear exposed and suffering in storm mapped to Passion,0,1,0,0,0,R5,2.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,plot to kill Lear mapped to Passion,0,1,0,0,0,R5,2.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,Lear imprisoned and secret assassination order mapped to Passion,0,1,0,0,0,R5,2.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,Gloucester fake cliff death and divine rescue mapped to resurrection,1,1,0,0,0,R6,1.584962500721156,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,Edgar as Poor Tom mapped to degraded sacred hero,1,1,0,0,0,R1,2.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,Lear final death mapped to death of Christ,0,1,0,0,0,R5,2.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,King Lear,Cordelia innocent execution mapped to Passion,1,1,0,0,0,R5,2.0,https://www.folger.edu/explore/shakespeares-works/king-lear/read/
+internal_negative,Don Quixote,mad protagonist mapped to degraded sacred hero,0,1,0,0,0,R1,2.0,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,Sancho Panza mapped to disciple follower,1,0,0,0,0,R2,2.0,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,Don Quixote instructs Sancho before governance,1,0,0,0,0,R2,2.0,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,Dulcinea enchantment trick mapped to miracle inversion,0,1,0,0,0,R4,2.0,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,Clavileno staged flight mapped to miracle trick,0,1,0,0,0,R4,2.0,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,Altisidora false death and revival mapped to resurrection,0,1,0,0,0,R6,1.584962500721156,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,Sancho suffering supposedly causes Altisidora revival,0,1,0,0,0,R4,2.0,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,Sierra Morena penance mapped to Passion,0,1,0,0,0,R5,2.0,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,cave descent and return mapped to descent and resurrection,0,1,0,1,0,R6,1.584962500721156,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,final defeat renunciation and death mapped to Passion,0,1,0,0,0,R5,2.0,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,ducal mock supernatural pageants mapped to miracles,0,1,0,0,0,R4,2.0,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+internal_negative,Don Quixote,penitents and dead-body procession mapped to Passion ritual,0,1,0,1,0,R5,2.0,https://www.gutenberg.org/cache/epub/996/pg996-images.html
+christian_control,Martin of Tours,Martin receives baptism,0,0,0,0,0,DIRECT,0.0,https://www.newadvent.org/fathers/3501.htm
+christian_control,Martin of Tours,devil confronts and tempts Martin,0,0,0,0,0,DIRECT,0.0,https://www.newadvent.org/fathers/3501.htm
+christian_control,Martin of Tours,eighty disciples mapped to apostles,1,0,0,0,0,R2,2.0,https://www.newadvent.org/fathers/3501.htm
+christian_control,Martin of Tours,disciples common meal mapped to Last Supper,0,1,0,0,0,R3,1.0,https://www.newadvent.org/fathers/3501.htm
+christian_control,Martin of Tours,public scourging and exile mapped to Passion,0,1,0,0,0,R5,2.0,https://www.newadvent.org/fathers/3501.htm
+christian_control,Martin of Tours,heals paralysed girl,0,0,0,0,0,DIRECT,0.0,https://www.newadvent.org/fathers/3501.htm
+christian_control,Martin of Tours,casts out demons,0,0,0,0,0,DIRECT,0.0,https://www.newadvent.org/fathers/3501.htm
+christian_control,Martin of Tours,raises dead catechumen,0,0,0,0,0,DIRECT,0.0,https://www.newadvent.org/fathers/3501.htm
+christian_control,Martin of Tours,raises hanged slave,0,0,0,0,0,DIRECT,0.0,https://catholiclibrary.org/library/view?chunk.id=00000021&docId=%2FFathers-EN%2Fnpnf.000818.SulpitiusSeverus.OntheLifeofStMartin.html
+christian_control,Martin of Tours,false Christ appears to tempt Martin,0,0,0,0,0,DIRECT,0.0,https://en.wikisource.org/wiki/Nicene_and_Post-Nicene_Fathers%3A_Series_II/Volume_XI/Sulpitius_Severus/On_the_Life_of_St._Martin/Chapter_XXIV
+christian_control,Martin of Tours,Martin foretells calamities and reveals them to brethren,0,0,0,0,0,DIRECT,0.0,https://www.newadvent.org/fathers/3501.htm
+christian_control,Martin of Tours,prison and proposed unarmed ordeal mapped to Passion,0,1,0,0,0,R5,2.0,https://www.newadvent.org/fathers/3501.htm
+christian_control,Francis of Assisi,twelve brethren mapped to apostles,1,0,0,0,0,R2,2.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,Francis and brethren preach the Gospel,0,0,0,0,0,DIRECT,0.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,explicit imitation of Gospel poverty,0,0,0,0,0,DIRECT,0.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,stigmata explicitly identified with wounds of Crucified Christ,0,0,0,0,0,DIRECT,0.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,Francis explicitly described as crucified with Christ in suffering,0,0,0,0,0,DIRECT,0.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,Francis knows his death time in advance,0,0,0,0,0,DIRECT,0.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,gathers brethren and gives farewell discourse,0,0,0,0,0,DIRECT,0.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,John 13 is read immediately before death,0,0,0,0,0,DIRECT,0.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,naked death explicitly modelled on Christ Crucified,0,0,0,0,0,DIRECT,0.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,postmortem bodily apparition mapped to resurrection,0,1,0,0,0,R6,1.584962500721156,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,postmortem healings and revivals attributed to Francis,0,0,0,0,0,DIRECT,0.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
+christian_control,Francis of Assisi,brethren surround him at death and receive blessing,0,0,0,0,0,DIRECT,0.0,https://www.ecatholic2000.com/bonaventure/assisi/francis.shtml
