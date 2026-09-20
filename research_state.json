@@ -1,8 +1,8 @@
 {
   "project": "NH Anti-Gospel comparative test",
-  "version": "0.5",
+  "version": "0.6",
   "frozen_on": "2026-09-21",
-  "status": "DISCRIMINATOR-1 closed: STRUCTURAL_SEPARATION_FAIL / RESIDUAL_HC_SIGNAL_NOT_DEMONSTRATED",
+  "status": "JOINT-HOLDOUT-1 closed: GENERIC_STRUCTURE_FILTER_PASS / NH_POSITIVE_VALIDATION_FAIL / OPEN_CHRISTIAN_CONTROL_PASS",
   "hypotheses": {
     "H0": "universal/random narrative overlap",
     "HB": "folklore motifs + Christian cultural matrix / imitatio Christi / desacralization",
@@ -10,8 +10,8 @@
   },
   "current_assessment": {
     "H0": "insufficient as a complete explanation",
-    "HB": "further strengthened; high-information prophecy, typology, explicit Christian vision and mythic narrative can produce strong structured parallels",
-    "HC": "not excluded, but no Christ-specific residual signal has been demonstrated by the current structural discriminator"
+    "HB": "further strengthened; explicit Christian hagiography can satisfy both Gospel semantics and structural discipline without historical identity",
+    "HC": "not excluded, but the first preregistered joint semantic-structural holdout validates none of the three NH-positive candidates"
   },
   "completed_gates": [
     {
@@ -44,15 +44,24 @@
       "data": "data/discriminator_1_scores.csv",
       "script": "scripts/discriminator_1.py",
       "validation": "results/DISCRIMINATOR_1_VALIDATION.txt"
+    },
+    {
+      "id": "JOINT-HOLDOUT-1",
+      "result": "GENERIC_STRUCTURE_FILTER_PASS / NH_POSITIVE_VALIDATION_FAIL / OPEN_CHRISTIAN_CONTROL_PASS",
+      "spec": "methods/JOINT_HOLDOUT_1_SPEC.md",
+      "selection": "methods/JOINT_HOLDOUT_1_SELECTION.md",
+      "artifact": "results/JOINT_HOLDOUT_1.md",
+      "data": "data/joint_holdout_1_scores.csv",
+      "script": "scripts/joint_holdout_1.py",
+      "validation": "results/JOINT_HOLDOUT_1_VALIDATION.txt"
     }
   ],
   "frozen_anchor_scale": "data/anchors.csv",
   "primary_candidate_package": "data/saxo_return_package.json",
-  "next_primary_gate": "JOINT-HOLDOUT-1",
+  "next_primary_gate": "TRUE-HOLDOUT-1",
   "queued_gates": [
     "CHRISTIAN-CONTROL-1",
     "MANUSCRIPT-SURVIVAL-1",
-    "TRUE-HOLDOUT-1",
     "RULE-SATURATION-1",
     "DATE-GATE"
   ],
@@ -68,10 +77,11 @@
     "source/version switching must pay nonzero selector cost",
     "free reordering must be tested explicitly rather than treated as zero-cost",
     "a useful HC discriminator must outperform internal NH negatives, not merely compress NH-positive texts",
-    "structural quality alone is not Gospel specificity; future tests must separately require semantic Gospel-anchor coverage",
-    "the DISCRIMINATOR-1 holdout cannot be reused to tune a joint classifier",
+    "structural quality alone is not Gospel specificity",
+    "joint classification requires both frozen Gospel-semantic coverage and frozen structural discipline",
+    "explicit Christian/hagiographic alternative generators must remain separately flagged rather than folded into the joint score",
+    "JOINT-HOLDOUT-1 cannot be reused to tune thresholds",
     "include manuscript survival uncertainty",
-    "include openly Christian controls",
     "chronological priority of ancient controls must be tested separately from structural similarity",
     "NH materials index claims; primary texts test them"
   ],
