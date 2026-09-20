@@ -1,8 +1,8 @@
 {
   "project": "NH Anti-Gospel comparative test",
-  "version": "0.6",
+  "version": "0.7",
   "frozen_on": "2026-09-21",
-  "status": "JOINT-HOLDOUT-1 closed: GENERIC_STRUCTURE_FILTER_PASS / NH_POSITIVE_VALIDATION_FAIL / OPEN_CHRISTIAN_CONTROL_PASS",
+  "status": "FORENSIC-IDENTITY-1A closed: CORE_KINSHIP_OVERLAP_PASS / ONE_TO_ONE_IDENTITY_FAIL / NAME_CORROBORATION_WEAK / LATE_LAYER_DEPENDENCE_HIGH",
   "hypotheses": {
     "H0": "universal/random narrative overlap",
     "HB": "folklore motifs + Christian cultural matrix / imitatio Christi / desacralization",
@@ -10,81 +10,35 @@
   },
   "current_assessment": {
     "H0": "insufficient as a complete explanation",
-    "HB": "further strengthened; explicit Christian hagiography can satisfy both Gospel semantics and structural discipline without historical identity",
-    "HC": "not excluded, but the first preregistered joint semantic-structural holdout validates none of the three NH-positive candidates"
+    "HB": "compatible with scene-dependent literary conflation and late adaptation",
+    "HC": "not excluded; strict one-to-one Hamlet identity is not supported by the first forensic layer, while a composite anti-Gospel transformation remains testable"
   },
   "completed_gates": [
+    {"id":"SAXO-PACKAGE-1","result":"DISTINCTIVE_MATCH_PASS / UNIQUENESS_FAIL","artifact":"results/SAXO_PACKAGE_1.md"},
+    {"id":"MDL-1","result":"RULE_FAMILY_SATURATION_PASS / ROBUST_COMPRESSION_NOT_DEMONSTRATED","artifact":"results/MDL_1.md"},
+    {"id":"MDL-CONTROL-1","result":"GRAMMAR_TRANSFER_PASS / CHRIST_SPECIFICITY_FAIL","artifact":"results/MDL_CONTROL_1.md"},
+    {"id":"DISCRIMINATOR-1","result":"STRUCTURAL_SEPARATION_FAIL / RESIDUAL_HC_SIGNAL_NOT_DEMONSTRATED","artifact":"results/DISCRIMINATOR_1.md"},
+    {"id":"JOINT-HOLDOUT-1","result":"GENERIC_STRUCTURE_FILTER_PASS / NH_POSITIVE_VALIDATION_FAIL / OPEN_CHRISTIAN_CONTROL_PASS","artifact":"results/JOINT_HOLDOUT_1.md"},
     {
-      "id": "SAXO-PACKAGE-1",
-      "result": "DISTINCTIVE_MATCH_PASS / UNIQUENESS_FAIL",
-      "artifact": "results/SAXO_PACKAGE_1.md",
-      "controls": "data/saxo_package_1_controls.csv"
-    },
-    {
-      "id": "MDL-1",
-      "result": "RULE_FAMILY_SATURATION_PASS / ROBUST_COMPRESSION_NOT_DEMONSTRATED",
-      "artifact": "results/MDL_1.md",
-      "data": "data/mdl1_claims.csv",
-      "script": "scripts/mdl_selector_entropy.py",
-      "validation": "results/MDL_1_VALIDATION.txt"
-    },
-    {
-      "id": "MDL-CONTROL-1",
-      "result": "GRAMMAR_TRANSFER_PASS / CHRIST_SPECIFICITY_FAIL",
-      "artifact": "results/MDL_CONTROL_1.md",
-      "data": "data/mdl_control_1_claims.csv",
-      "script": "scripts/mdl_control_1.py",
-      "validation": "results/MDL_CONTROL_1_VALIDATION.txt"
-    },
-    {
-      "id": "DISCRIMINATOR-1",
-      "result": "STRUCTURAL_SEPARATION_FAIL / RESIDUAL_HC_SIGNAL_NOT_DEMONSTRATED",
-      "spec": "methods/DISCRIMINATOR_1_SPEC.md",
-      "artifact": "results/DISCRIMINATOR_1.md",
-      "data": "data/discriminator_1_scores.csv",
-      "script": "scripts/discriminator_1.py",
-      "validation": "results/DISCRIMINATOR_1_VALIDATION.txt"
-    },
-    {
-      "id": "JOINT-HOLDOUT-1",
-      "result": "GENERIC_STRUCTURE_FILTER_PASS / NH_POSITIVE_VALIDATION_FAIL / OPEN_CHRISTIAN_CONTROL_PASS",
-      "spec": "methods/JOINT_HOLDOUT_1_SPEC.md",
-      "selection": "methods/JOINT_HOLDOUT_1_SELECTION.md",
-      "artifact": "results/JOINT_HOLDOUT_1.md",
-      "data": "data/joint_holdout_1_scores.csv",
-      "script": "scripts/joint_holdout_1.py",
-      "validation": "results/JOINT_HOLDOUT_1_VALIDATION.txt"
+      "id":"FORENSIC-IDENTITY-1A",
+      "result":"CORE_KINSHIP_OVERLAP_PASS / ONE_TO_ONE_IDENTITY_FAIL / NAME_CORROBORATION_WEAK / LATE_LAYER_DEPENDENCE_HIGH",
+      "method":"methods/FORENSIC_IDENTITY_MATRIX_V1.md",
+      "artifact":"results/FORENSIC_IDENTITY_1A_HAMLET_NAMES_RELATIONS.md",
+      "identity_data":"data/forensic_case_001_identity_map.csv",
+      "relation_data":"data/forensic_case_001_relation_edges.csv"
     }
   ],
-  "frozen_anchor_scale": "data/anchors.csv",
-  "primary_candidate_package": "data/saxo_return_package.json",
-  "next_primary_gate": "TRUE-HOLDOUT-1",
-  "queued_gates": [
-    "CHRISTIAN-CONTROL-1",
-    "MANUSCRIPT-SURVIVAL-1",
-    "RULE-SATURATION-1",
-    "DATE-GATE"
+  "next_primary_gate":"FORENSIC-IDENTITY-1B",
+  "queued_gates":["TRUE-HOLDOUT-1","CHRISTIAN-CONTROL-1","MANUSCRIPT-SURVIVAL-1","DATE-GATE"],
+  "critical_constraints":[
+    "concrete person/relation/name provenance must be audited before aggregate similarity",
+    "test a one-to-one identity map before allowing scene-dependent composites",
+    "role fusion and role splitting must be explicit",
+    "a Shakespeare-only name cannot count as independent corroboration from Saxo",
+    "source/version switching must be recorded",
+    "rare source-only details do not support Gospel identity unless shared or covered by a frozen transformation",
+    "do not update the repository for routine intermediate findings"
   ],
-  "critical_constraints": [
-    "do not add rules after viewing holdout without version bump and ad-hoc penalty",
-    "importance must be assessed inside source text before Gospel mapping",
-    "predictions and fulfilment are separate high-value structure",
-    "preserve roles and event order",
-    "distinguish rarity of source story from rarity of shared structure",
-    "features absent from the proposed prototype do not support prototype identity merely because they are rare in the source text",
-    "distinguish forecast intervals from intervals merely reported by the narrator",
-    "broad transformation-family reuse must pay selector/fanout cost",
-    "source/version switching must pay nonzero selector cost",
-    "free reordering must be tested explicitly rather than treated as zero-cost",
-    "a useful HC discriminator must outperform internal NH negatives, not merely compress NH-positive texts",
-    "structural quality alone is not Gospel specificity",
-    "joint classification requires both frozen Gospel-semantic coverage and frozen structural discipline",
-    "explicit Christian/hagiographic alternative generators must remain separately flagged rather than folded into the joint score",
-    "JOINT-HOLDOUT-1 cannot be reused to tune thresholds",
-    "include manuscript survival uncertainty",
-    "chronological priority of ancient controls must be tested separately from structural similarity",
-    "NH materials index claims; primary texts test them"
-  ],
-  "repository": "https://github.com/mvecreator/New-hronology",
-  "update_policy": "commit only significant research results; do not commit routine intermediate findings"
+  "repository":"https://github.com/mvecreator/New-hronology",
+  "update_policy":"commit only significant research results; do not commit routine intermediate findings"
 }
